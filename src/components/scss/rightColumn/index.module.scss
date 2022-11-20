@@ -1,0 +1,130 @@
+.right {
+  max-width: 320px;
+  width: 100%
+}
+.title_wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  font-family: Merriweather, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  &:before {
+    background-color: #ba2d0b;
+    content: "";
+    height: 1px;
+    margin-left: 13px;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%
+  }
+  &:after {
+    background-color: #ba2d0b;
+    border-radius: 50px;
+    content: "";
+    height: 6px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 6px
+  }
+}
+
+
+.swiper_news {
+  height: 400px !important;
+  margin-bottom: 75px;
+  text-align: left;
+  .swiper_slide {
+    background-color: #ba2d0ba6;
+    border-radius: 7px;
+    color: #fffaff;
+    font-size: 14px;
+    overflow: hidden;
+    text-align: left
+  }
+  .wrapper {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+  }
+  .info {
+    max-width: 170px;
+    padding: 10px 0 10px 10px
+  }
+  .image {
+    background-position: 50%;
+    background-size: cover;
+    height: 115px;
+    width: 124px
+  }
+}
+
+.swiper_dates {
+  height: 255px !important;
+  text-align: left;
+  .swiper_slide {
+    background-color: #ba2d0ba6;
+    border-radius: 7px;
+    color: #fffaff;
+    font-size: 14px;
+    overflow: hidden;
+    text-align: left
+  }
+  .wrapper {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    &>.date {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      align-items: center;
+      background-color: #ba2d0ba6;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      justify-content: center;
+      width: 124px;
+      .day {
+        font-family: Merriweather, sans-serif;
+        font-size: 48px;
+        line-height: 1.1
+      }
+      .month {
+        font-family: Rubik, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.1;
+        text-transform: uppercase
+      }
+    }
+  }
+}
+
+.swiper_dates .info {
+  max-width: 170px;
+  padding: 10px 0 10px 10px
+}

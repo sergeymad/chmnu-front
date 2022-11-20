@@ -1,4 +1,99 @@
+
 .header {
-  background-color: #20232a;
-  text-align: center;
+  background-color: #ba2d0b;
+  color: #fffaff;
+  padding: 15px 0;
+
+  .info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 17px
+  }
+
+  .search {
+    max-width: 180px;
+    position: relative;
+    input {
+      border: none;
+      border-radius: 50px;
+      max-width: 180px;
+      padding: 1px 25px 1px 5px
+    }
+    i {
+      color: #c0b9c0;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%)
+    }
+  }
+
+  .lang {
+    display: flex;
+    margin: 0 10px;
+    .item {
+      margin: 0 7px
+    }
+  }
+
+  .name {
+    border-bottom: 1px solid #fffaff;
+    font-family: Merriweather, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 7px;
+    position: relative;
+    white-space: nowrap;
+    &:before {
+      background-color: #fffaff;
+      border-radius: 50px;
+      content: "";
+      height: 6px;
+      left: 0;
+      position: absolute;
+      top: 100%;
+      -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+      transform: translateY(-2px);
+      width: 6px
+    }
+  }
+  .topline {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+  .bottomline, .topline {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+  .bottomline {
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: -7px;
+    padding-left: 0;
+    a {
+      border: 1px solid rgba(0, 0, 0, 0);
+      border-radius: 50px;
+      color: #fffaff;
+      font-family: Rubik, sans-serif;
+      font-weight: 300;
+      padding: 6px 10px;
+      &:hover {
+        border-color: #fffaff
+      }
+    }
+  }
 }

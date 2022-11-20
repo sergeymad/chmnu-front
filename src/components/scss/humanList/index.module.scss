@@ -1,0 +1,48 @@
+
+.human_list {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: flex;
+
+  &,.item{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+  .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 10px;
+    max-width: 225px;
+    text-align: center;
+    width: 100%;
+    .name {
+      font-family: Merriweather, sans-serif;
+      font-size: 20px;
+      font-weight: 700
+    }
+    .portrait {
+      background-position: top;
+      background-size: cover;
+      border-radius: 7px;
+      -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, .25);
+      box-shadow: 0 2px 7px rgba(0, 0, 0, .25);
+      height: 150px;
+      width: 125px
+    }
+    .role {
+      font-family: Rubik, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase
+    }
+  }
+}

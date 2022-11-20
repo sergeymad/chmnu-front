@@ -1,0 +1,42 @@
+
+.seo {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px
+}
+
+.seo .left {
+  max-width: 420px
+}
+
+.seo .left .subtitle {
+  font-family: Rubik, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1
+}
+
+.seo .left .lesser_subtitle {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 20px
+}
+
+.seo .right {
+  max-width: 320px;
+  width: 100%
+}
+
+.seo .image {
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 7px;
+  height: 320px;
+  margin-left: 15px;
+  width: 100%
+}

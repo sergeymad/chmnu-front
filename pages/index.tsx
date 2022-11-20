@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header, Main, Cards, Footer } from "@components/scss";
+import {Main} from "@components/scss";
 
 const Home: React.FC = () => {
   return (
@@ -11,10 +11,7 @@ const Home: React.FC = () => {
         minHeight: "100vh",
       }}
     >
-      <Header />
       <Main />
-      <Cards />
-      <Footer />
     </div>
   );
 };

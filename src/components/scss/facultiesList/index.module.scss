@@ -1,0 +1,33 @@
+.faculties_list{
+  margin-top: 40px;
+  .item{
+
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    &:nth-of-type(2n){
+      flex-direction: row-reverse;
+      ul{
+        margin-right: 40px;
+        margin-left: 0;
+      }
+    }
+    .image{
+      width: 100%;
+      max-width: 420px;
+      height: 280px;
+      background-size: cover;
+      background-position: center;
+    }
+    ul{
+      width: 100%;
+      padding: 0;
+      margin-left: 40px;
+    }
+    li{
+      list-style-type: none;
+      font-size: 18px;
+    }
+  }
+
+}

@@ -1,15 +1,57 @@
-.main {
-  background-color: #282c34;
-  color: #ffffff;
+.left {
+  margin-right: 30px;
+  max-width: 820px;
+  width: 100%
+}
+.wrapper{
+  display: flex;
+  align-items: flex-start;
+}
+
+.information {
+  margin-top: 30px
+}
+
+.information .buttons {
+  margin-top: 15px;
+  max-width: 320px;
+  width: 100%
+}
+
+.information .button {
+  background-color: #c04528;
+  border-radius: 50px;
+  color: #fffaff;
+  display: block;
+  font-family: Rubik, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 17px;
+  max-width: 320px;
   text-align: center;
-  padding: 2rem 0;
+  width: 100%
+}
 
-  h1 {
-    color: #ffffff;
-    font-size: 2.875rem;
-  }
+.information .button:hover {
+  background-color: #fffaff;
+  color: #c04528
+}
 
-  p {
-    font-size: 1.125rem;
-  }
+.information .phone_wrap, .information .socials {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.information .socials {
+  font-size: 35px
+}
+
+.information .image {
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 7px;
+  height: 320px;
+  margin-left: 15px;
+  width: 100%
 }
